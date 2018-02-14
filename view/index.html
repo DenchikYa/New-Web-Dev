@@ -2,6 +2,8 @@
 <head>
     <meta charset=UTF-8>
     <title>Крестики-нолики игра</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="../js/controller.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
 </head>
 <body>
@@ -47,22 +49,10 @@
               d="M 120 180 L120,60"
         ></path>
     </svg>
-    <table class="game">
+    <table class="game" ng-app="tableApp" ng-controller="tableController">
         <tbody align="center">
-            <tr>
-                <td><img src="../images/cross-light.svg"></td>
-                <td></td>
-                <td><img src="../images/circle-dark-stroked.svg"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><img src="../images/circle-dark-stroked.svg"></td>
-                <td></td>
+            <tr ng-repeat="side in gamePlace">
+               <td ng-repeat="cell in side track by $index">{{cell}}</td>
             </tr>
         </tbody>
     </table>
