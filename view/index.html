@@ -52,8 +52,7 @@
     <table class="game" ng-app="tableApp" ng-controller="tableController">
         <tbody align="center">
             <tr ng-repeat="side in gamePlace">
-                <td ng-repeat="cell in side track by $index"><img src="../images/cross-light.svg" ng-if="cell=='X'"></td>
-                <td ng-repeat="cell in side track by $index"><img src="../images/circle-dark-stroked.svg" ng-if="cell=='0'"></td>
+                <td ng-repeat="cell in side track by $index"><img src="../images/cross-light.svg" ng-if="cell=='X'"><img src="../images/circle-dark-stroked.svg" ng-if="cell=='0'"></td>
             </tr>
         </tbody>
     </table>
