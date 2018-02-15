@@ -110,15 +110,15 @@ button {
     box-sizing: border-box;
     background: #f8f8f8;
     text-align: center;
-    box-shadow: 0 0 2px rgb(161, 161, 161);
-    color: #14d4c3;
+    box-shadow: 0 1px 5px rgb(161, 161, 161);
+    color: #14bbaa;
     font-weight: bold;
     width: 580px;
     margin: 0 0 10px 10px;
     cursor: pointer;
-    padding: 10px 0 10px 0;
+    padding: 15px 0 15px 0;
 }
 
 .new-game:active {
-    box-shadow: 0 2px 0 rgb(216, 216, 216);
+    box-shadow: 0 3px 2px rgb(196, 196, 196);
 }
