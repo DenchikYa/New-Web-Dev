@@ -1,9 +1,12 @@
+@fon_color:#f8f8f8;
+
 body {
   width: 600px;
   font-family: Arial, sans-serif;
   padding: 0;
   margin: auto;
 }
+
 button {
   background: none;
   border: none;
@@ -11,16 +14,19 @@ button {
   text-decoration: none;
   user-select: none;
 }
+
 .logo {
   margin: 50px 150px 25px 150px;
 }
+
 /* _____ШАПКА_____ */
 .menu-game {
   padding: 10px 10px 3px 10px;
   margin: 10px 10px 0 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 0 2px #d3d3d3;
+  background-color: @fon_color;
+  box-shadow: 0 0 2px rgb(211, 211, 211);
 }
+
 /* _____Счетчик _____*/
 .game-counts {
   margin-top: 15px;
@@ -28,6 +34,7 @@ button {
   display: flex;
   justify-content: center;
 }
+
 .game-counts button {
   border-radius: 1px;
   margin-right: 2px;
@@ -35,29 +42,36 @@ button {
   background: #fff;
   padding: 5px 10px 5px 10px;
   box-sizing: border-box;
-  box-shadow: 0.5px 1px 0 #eeeeee;
+  box-shadow: 0.5px 1px 0 rgb(238, 238, 238);
+
 }
+
 .game-counts button:active {
-  box-shadow: 0 2px 0 #13e1d0;
+  box-shadow: 0 2px 0 rgb(19, 225, 208);
 }
+
 .simbol-player {
   float: left;
 }
+
 .simbol-player img {
   padding-top: 2px;
   width: 15px;
 }
+
 .counts {
   font-weight: bold;
   color: #a1a1a1;
   float: right;
 }
+
 /* _____Информационное сообщение_____*/
 .menu-game p {
   color: #8f8f8f;
   font-size: 11px;
   text-align: center;
 }
+
 /* _____ ИГРА _____*/
 .game-place {
   height: 200px;
@@ -68,22 +82,29 @@ button {
   background: #12bdab;
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 2px #d3d3d3;
+  box-shadow: 0 0 2px rgb(211, 211, 211);
 }
+
 .table-lines {
   width: 180px;
   height: 180px;
   position: absolute;
 }
+
 .game {
   padding-right: 45px;
   border-spacing: 6px;
 }
+
 .game img {
   width: 50px;
 }
+
 .game tr {
   height: auto;
+}
+
+.game td {
 }
 /* _____ НОВАЯ ИГРА _____*/
 .new-game {
@@ -91,7 +112,7 @@ button {
   box-sizing: border-box;
   background: #f8f8f8;
   text-align: center;
-  box-shadow: 0 1px 2px #cccccc;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
   color: #14bbaa;
   font-weight: bold;
   width: 580px;
@@ -100,9 +121,10 @@ button {
   padding: 15px 0 15px 0;
   border: 1px solid #d6d6d6;
   border-top: none;
-  border-bottom: 1px solid #b3b3b3;
+  border-bottom:1px solid #b3b3b3;
   border-radius: 1px;
 }
+
 .new-game:active {
-  box-shadow: 0 3px 5px #c6c6c6;
+  box-shadow: 0 3px 5px rgb(198, 198, 198);
 }
